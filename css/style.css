@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Tahoma', sans-serif;
+  color: #666;
+  font-size: 16px;
+  background: url(../img/bgd.jpg) repeat;
+  line-height: 1,6rem;
+}
+
+.container {
+  width: 60%;
+  margin: 30px auto;
+  overflow: auto;
+}
+
+.q p:before{
+  content: "→";
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.accordion-title {
+  height: 40px;
+  background-color: darkturquoise;
+  color: #fff;
+  text-align: center;
+  padding-top: 30px
+}
+
+.title img {
+  display: inline;
+  float: left;
+  padding-right: 15px;
+}
+
+.acc-icon {
+  transition: rotate(90deg);
+}
+
+.rotate{
+  transform: rotate(90deg);
+}
+
+.liste li {
+  padding: 20px;
+}
+
+.liste .title {
+  background: #eee;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 1px #ddd solid;
+  cursor: pointer;
+  list-style: none;
+  padding-bottom: 30px;
+}
+
+.liste .content {
+  background: #ddd;
+  display: none;
+}
+
+#aquarelle{
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 47px;
+  left: -78px;
+  width: 26%;
+}
+
+@media(max-width: 800px){
+  .container {
+    width: 90%;
+  }
+  #aquarelle {
+    display: none;
+  }
+}
